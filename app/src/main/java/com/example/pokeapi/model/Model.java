@@ -41,6 +41,7 @@ public class Model implements Observer<String> {
                 doSearch(name.toLowerCase(Locale.ROOT));
             }
         };
+        (new Thread(r)).start();
     }
 
     private void doSearch(String name) {
