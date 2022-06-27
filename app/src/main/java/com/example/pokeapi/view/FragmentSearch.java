@@ -27,7 +27,6 @@ public class FragmentSearch extends Fragment {
         btSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Model.getInstance().searchPokemon(pokemonName.getText().toString());
             }
         });
